@@ -1,0 +1,8 @@
+*~
+\#*
+.DS_State/
+.vagrant/
+venv/
+app/db.sqlite3
+app/index.html
+**/__pycache__/
