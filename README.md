@@ -4,6 +4,7 @@ Everything you need to construct a Dig Hum Vagrant box.
 
 # What you need
 
+- For MacOS: xcode commandline tools (`xcode-select --install`)
 - Vagrant (`brew install vagrant`)
 - VirtualBox (`brew install virtualbox`; may require system restart)
 - Ansible (`brew install ansible`)

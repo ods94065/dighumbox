@@ -11,13 +11,6 @@
       apt:
         name: build-essential
         state: present
-    - name: Install database
-      become: true
-      apt:
-        name:
-          - postgresql
-          - postgresql-client
-        state: present
     - name: Install python
       become: true
       apt:
@@ -26,6 +19,7 @@
           - python3-dev
           - python-is-python3
           - python3-pip
+          - python3-venv
           - python3-django
           - python3-psycopg2
         state: latest
@@ -39,8 +33,4 @@
         name: apache2
         enabled: yes
         state: started
-    - name: Set up database to run
-      service:
-        name: postgresql
-        enabled: yes
-        state: started
+
