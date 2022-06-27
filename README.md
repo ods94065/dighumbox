@@ -39,7 +39,6 @@ This also has an instance of `apache2` running on port 80, which I've mapped to 
 
 The provisioning script is an Ansible script: `playbook.yml`. If you make a change to the script and want to apply it, simply use `vagrant provision`.
 
-The local directory `app/` is mounted into the VM at `/app`. To change the app's code, you should just be able to edit locally and see the changes take effect immediately while the app is running in the VM.
 
 # Creating the actual box
 
